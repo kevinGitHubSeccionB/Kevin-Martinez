@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salarios</title>
+    <script src="javascriptr.js"></script> 
+</head>
+<body>
+    <center> 
+        <h1>Calculadora de Salarios</h1>
+    </center>
+    <b><br>POR FAVOR INGRESE SU NOMBRE : </b>
+        <P> <div class="divinput">
+            <input type="text" placeholder="escribe tu nombre" id="empleado" autofocus > </div>
+
+            <b><br>SELECCIONE SU CARGO : </b>
+            <select size="1" name="salida" class="select" id="salida">    <!-- Campo tipo Select -->
+                <option value="" selected>SELECCIONE EL CARGO</option>    <!-- Usando la etiqueda OPTION se van agregando elementos a la lista para que sean desplegados -->
+                <option value="Supervisor" >Supervisor</option>
+                <option value="Secretaria">Secretaria</option>
+                <option value="Mensajero">Mensajero</option>
+    </select>
+    <P> <b>COLOQUE LA CANTIDAD DE HORAS EXTRAS :</b> </P> 
+        <P> <div class="divinput">
+    <input type="text" placeholder="cantidad de horas" id="horas" autofocus > </div>
+
+    <button onclick="calcularsalario()">Calcular salario</button>
+
+</body>
+</html>
